@@ -1,0 +1,60 @@
+/**
+ * @name ComicallySimpleInverted
+ * @description Comic Sans + Inverted black/orange for max meme energy. Built on DiscordPlus.
+ */
+
+@import url("https://plusinsta.github.io/discord-plus/src/DiscordPlus-source.theme.css");
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url('https://raw.githubusercontent.com/danitrodev/ComicallySimple/main/Comic%20Sans%20MS.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.theme-dark {
+  /* 🔶 Background becomes orange */
+  --dplus-backdrop: #ff7300;
+
+  /* 🖤 Accents now dark/black */
+  --dplus-accent-color-hue: 0;
+  --dplus-accent-color-saturation: 0%;
+  --dplus-accent-color-lightness: 5%;
+
+  /* Text/link hues flipped to dark */
+  --dplus-foreground-color-hue-base: 0;
+  --dplus-foreground-color-hue-links: 0;
+  --dplus-foreground-color-saturation-amount: 0.1;
+  --dplus-foreground-color-lightness-amount: 0.5;
+
+  /* UI background (now darker over orange) */
+  --dplus-background-color-hue: 0;
+  --dplus-background-color-saturation-amount: 1;
+  --dplus-background-color-lightness-amount: 0.05;
+  --dplus-background-color-alpha: 0.9;
+}
+
+:root {
+  /* 🖋️ Still Comic Sans chaos */
+  --dplus-font-ui: "Comic Sans MS", cursive, sans-serif;
+  --dplus-font-body: "Comic Sans MS", cursive, sans-serif;
+  --dplus-font-header: "Comic Sans MS", cursive, sans-serif;
+
+  /* 💥 Round comic vibes */
+  --dplus-radius-ui: 12px;
+  --dplus-radius-avatar: 30%;
+  --dplus-radius-server: 30%;
+  --dplus-spacing-ui: 10px;
+  --dplus-spacing-app: 12px;
+
+  /* 🔄 Manually override common Discord oranges with black */
+  --brand-experiment: #0d0d0d !important;
+  --brand-experiment-560: #1a1a1a !important;
+  --text-link: #111111 !important;
+  --button-brand-background: #000000 !important;
+  --button-brand-hover-background: #1a1a1a !important;
+
+  /* Scrollbar and hover junk goes orange */
+  --scrollbar-colour: rgba(255, 115, 0, 0.6);
+}
+
